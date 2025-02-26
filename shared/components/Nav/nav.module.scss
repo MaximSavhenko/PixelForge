@@ -1,15 +1,19 @@
 .nav {
-    &__list {
-      display: flex;
-      gap: 4rem;
+  &__list {
+    display: flex;
+    gap: 4rem;
 
-      &_item {
-        color: #fff;
-        transition: opacity 0.3s;
+    &_item {
+      color: #fff;
+      transition: opacity 0.3s;
 
-        &:hover {
-          opacity: 0.8;
-        }
+      &_active {
+        border-bottom: 3px solid #5c62ec;
+      }
+
+      &:hover {
+        opacity: 0.8;
       }
     }
   }
+}

@@ -1,7 +1,10 @@
-import { Intro } from '@/shared/components'
+import { Intro, Skills } from '@/shared/components'
 
 export default function Home() {
   return (
-    <Intro />
+    <>
+      <Intro />
+      < Skills/>
+    </>
   )
 }
