@@ -1,0 +1,15 @@
+.nav {
+    &__list {
+      display: flex;
+      gap: 4rem;
+
+      &_item {
+        color: #fff;
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }

@@ -1,0 +1,37 @@
+.intro {
+  min-height: 695px;
+  padding: 20px 0;
+  background-color: #171718;
+  background-image: url('/header-bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__wrapp {
+    color: #fafafa;
+    text-align: center;
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      strong {
+        font-size: 6rem;
+        font-style: normal;
+      }
+
+      em {
+        color: #5c62ec;
+        font-style: normal;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 4rem;
+    }
+  }
+}
