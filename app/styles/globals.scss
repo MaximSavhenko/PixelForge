@@ -5,9 +5,9 @@
 :root {
   --blackpure: #000;
   --black: #171718;
-  --black-border: #26292d;
+  --black-border: #26292D;
   --white: #fff;
-  --purple: #5c62ec;
+  --purple: #5C62EC;
 
   --text-color: var(--black);
 
@@ -27,13 +27,12 @@
   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
 }
 
-.dark {
-  /* Dark mode */
+
+
+.dark-theme {
   --page-bg: #252526;
   --text-color: var(--white);
-
   --title-1: var(--white);
-
   --project-card-bg: var(--black);
   --project-card-text: var(--white);
   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
@@ -53,6 +52,7 @@ body {
   color: var(--text-color);
   line-height: 1.2;
   font-size: 1.6rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {

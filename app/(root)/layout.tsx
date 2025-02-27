@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import '../globals.scss'
+import '../styles/globals.scss'
 import { Footer, Header } from '@/shared/components'
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <>
       <Header />
-      <main>{children}</main>
+        <main>{children}</main>
       <Footer />
     </>
   )

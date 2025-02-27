@@ -1,0 +1,39 @@
+@mixin trs() {
+    transition: all .3s;
+}
+
+@mixin f_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin resetbg {
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@mixin b($point) {
+    @if $point == desktop {
+        @media (max-width: 1366px) {
+            @content;
+        }
+
+    } @else if $point == tablet {
+        @media (max-width: 1024px) {
+            @content;
+        }
+
+    } @else if $point == mobile {
+        @media (max-width: 767px) {
+            @content;
+        }
+
+    } @else {
+        @media (max-width: ($point + 'px')) {
+            @content;
+        }
+    
+    }
+  
+}

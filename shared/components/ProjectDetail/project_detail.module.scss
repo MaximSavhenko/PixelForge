@@ -15,7 +15,7 @@
   }
 
   &_img {
-    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--box-shadow);
     max-width: 865px;
     max-height: 650px;
     object-fit: cover;
@@ -27,9 +27,11 @@
     justify-content: center;
     align-items: center;
     padding: 12px 20px;
-    border: 1px solid #000;
+    border: 1px solid var(--blackpure);
+    color: var(--blackpure);
     border-radius: 5px;
     transition: all 0.3s ease;
+    background-color: var(--white);
     img {
       width: 24px;
       height: 24px;
@@ -38,6 +40,10 @@
 
     &:hover {
       opacity: 0.7;
+    }
+    &:active {
+      position: relative;
+      top: 2px;
     }
   }
 }

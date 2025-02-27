@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './header.module.scss'
 import Link from 'next/link'
 import { Nav } from '../Nav'
+import { ThemeToggle } from '../ThemeToggle'
 
 interface Props {
   className?: string
@@ -16,6 +17,7 @@ export const Header: React.FC<Props> = ({ className }) => {
             PixelForge
           </Link>
           <Nav />
+          <ThemeToggle />
         </div>
       </div>
     </header>
