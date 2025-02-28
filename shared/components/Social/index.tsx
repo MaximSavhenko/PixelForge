@@ -12,14 +12,12 @@ export const Social: React.FC<Props> = ({ className }) => {
     <ul className={styles.social}>
       <li>
         <Link href="/">
-          <Instagram color="white" width={38} height={38} />
+          <Instagram color="white" />
         </Link>
       </li>
       <li>
         <Link href="/">
           <svg
-            width="38"
-            height="38"
             viewBox="0 0 38 38"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -34,8 +32,6 @@ export const Social: React.FC<Props> = ({ className }) => {
       <li>
         <Link href="/">
           <svg
-            width="38"
-            height="38"
             viewBox="0 0 38 38"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

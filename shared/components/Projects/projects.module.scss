@@ -1,3 +1,6 @@
 .projects {
     padding: 70px 0;
+    @include b(mobile) {
+        padding: 20px 0;
+    }
 }

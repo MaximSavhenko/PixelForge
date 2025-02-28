@@ -19,9 +19,16 @@
       font-weight: 700;
       text-align: center;
       margin-bottom: 2rem;
+      @include b(mobile) {
+        font-size: 3rem;
+      }
       strong {
         font-size: 6rem;
         font-style: normal;
+
+        @include b(mobile) {
+          font-size: 4rem;
+        }
       }
 
       em {

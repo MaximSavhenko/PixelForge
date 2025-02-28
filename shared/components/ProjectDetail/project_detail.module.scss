@@ -1,25 +1,37 @@
 .project_detail {
   padding: 7rem 0;
 
+  @include b(mobile) {
+    padding: 3rem 0;
+  }
+
   &__wrapp {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 865px;
+    margin: 0 auto;
     flex-direction: column;
-    gap: 4rem;
 
     p {
       font-size: 2.4rem;
       font-weight: 700;
+      margin-bottom: 3rem;
+
+      @include b(mobile) {
+        margin-bottom: 2rem;
+      }
     }
   }
 
   &_img {
     box-shadow: var(--box-shadow);
-    max-width: 865px;
-    max-height: 650px;
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 4rem;
+    @include b(mobile) {
+      margin-bottom: 2rem;
+    }
   }
 
   &_link {

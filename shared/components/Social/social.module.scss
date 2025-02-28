@@ -4,4 +4,15 @@
     align-items: center;
     gap: 3rem;
     margin-bottom: 2.7rem;
+    @include b(mobile) {
+        margin-bottom: 1.5rem;
+    }
+    svg {
+        width: 38px;
+        height: 38px;
+
+        @include b(mobile) {
+            width: 28px;
+        }
+    }
 }

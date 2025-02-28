@@ -1,4 +1,7 @@
 .nav {
+  @include b(mobile) {
+    order: 10;
+  }
   &__list {
     display: flex;
     gap: 4rem;
